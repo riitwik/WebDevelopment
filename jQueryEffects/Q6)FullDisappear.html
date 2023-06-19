@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappear</title>
+    <style>
+        div{
+            background-color: azure;
+            padding: 10px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: greenyellow;
+        }
+        button{
+            background-color: lightgrey;
+            border-style: none;
+            float: right;
+        }
+        .change{
+            background-color: gray;
+        }
+    </style>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("button").hover(
+                function(){
+                $(this).addClass("change")},
+                function(){
+                    $(this).removeClass("change");
+                }
+            );
+        });
+    </script>
+</head>
+<body>
+    <div style="border-color: aliceblue;">
+    <div><h3>Heading 1<button>⨂</button></h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis quo aliquam, numquam tempora cumque aperiam eum! Quia totam veniam magnam dolore. Natus dignissimos perspiciatis maxime eaque, tempora magni saepe!</p></div>
+    <div><h3>Heading 1<button>⨂</button></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis quo aliquam, numquam tempora cumque aperiam eum! Quia totam veniam magnam dolore. Natus dignissimos perspiciatis maxime eaque, tempora magni saepe!</p></div>
+    <div><h3>Heading 1<button>⨂</button></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis quo aliquam, numquam tempora cumque aperiam eum! Quia totam veniam magnam dolore. Natus dignissimos perspiciatis maxime eaque, tempora magni saepe!</p></div>
+    <div><h3>Heading 1<button>⨂</button></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis quo aliquam, numquam tempora cumque aperiam eum! Quia totam veniam magnam dolore. Natus dignissimos perspiciatis maxime eaque, tempora magni saepe!</p></div>
+    <div><h3>Heading 1<button>⨂</button></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis quo aliquam, numquam tempora cumque aperiam eum! Quia totam veniam magnam dolore. Natus dignissimos perspiciatis maxime eaque, tempora magni saepe!</p></div>
+    </div>  
+</body>
+</html>

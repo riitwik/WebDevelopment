@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        div{
+            width: 600px;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        .divstyle{
+            background-color: azure;
+        }
+    </style>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $("button").click(function(){
+                $(this).parent().next().slideToggle();
+            })
+
+        })
+
+    </script>
+</head>
+<body>
+    <div>This is Quote One
+                <button style="float: right;font-size: larger;">▾</button>
+            </div>
+    <div class="divstyle" hidden>  “It isn’t until you come to a spiritual understanding of who you are<br>
+         – not necessarily a religious feeling, but deep down, the spirit within – <br>that you can begin to take control.”<br> – Oprah Winfrey  </div>
+
+    <div>This is Quote Two <button style="float: right;font-size: larger;">▾</button>    </div>
+    <div class="divstyle" hidden>  “You have to grow from the inside out. None can teach you, none can make you spiritual. There is no other teacher but your own soul.” – Swami Vivekananda  </div>
+
+    <div> This is Quote Three  <button style="float: right;font-size: larger;">▾</button> </div>
+    <div class="divstyle" hidden>  “A sacrifice to be real must cost, must hurt, and must empty ourselves. Give yourself fully to God. He will use you to accomplish great things on the condition that you believe much more in His love than in your weakness.” – Mother Teresa  </div>
+
+    <div> This is Quote Four  <button style="float: right;font-size: larger;">▾</button> </div>
+    <div class="divstyle" hidden> “Peaceful is the one who’s not concerned with having more or less. Unbound by name and fame, he is free from sorrow from the world and mostly from himself.” – Rumi</div>
+
+    <div> This is Quote Five <button style="float: right;font-size: larger;">▾</button>  </div>
+    <div class="divstyle" hidden>  “Spirituality is recognizing and celebrating that we are all inextricably connected to each other by a power greater than all of us and that our connection to that power and to one another is grounded in love and compassion. Practicing spirituality brings a sense of perspective, meaning and purpose to our lives.” – Brené Brown  </div>
+
+    
+</body>
+</html>

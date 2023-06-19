@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            
+            $("a").click(function () {
+                $(this).parent().next().slideDown();
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <table style="border-spacing: 20px;">
+            <tr>
+            <td>Samsung Galaxy s22</td>
+            <td> <a href="#">Show Description</a></td>
+            <td style="visibility: hidden;"> Excellent Zooming<br> </td>
+        </tr>
+        
+        <tr>
+            <td>Apple iPhone 14 Pro Max</td>
+            <td> <a href="#">Show Description</a></td>
+            <td style="visibility: hidden"> Amazing Camera Clarity</td>
+        </tr>
+
+        <tr>
+            <td>Asus Rog 2</td>
+            <td> <a href="#">Show Description</a></td>
+            <td style="visibility: hidden">Gaming Phone</td>
+        </tr>
+        <tr>
+            <td>Oneplus 11R</td>
+            <td> <a href="#">Show Description</a></td>
+            <td style="visibility: hidden">The best in all aspects Android Phone</td>
+        </tr>
+
+        </table>
+    </div>
+</body>
+</html>

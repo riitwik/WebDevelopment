@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcFact(n)
+        {
+            
+            var f=1;
+            for(i=1;i<n;i++,f*=i);
+           //alert(f);
+            document.getElementById("factdiv").innerHTML="Factorial of "+n+" is "+f;
+        }
+    </script>
+</head>
+
+<body>
+
+  
+    <form>
+        <table border="1" style="background-color: orangered;">
+
+            <tr>
+                <td><label for="num">Enter a number: </label></td>
+                <td style="width: 50;"><input type="number" name="num" id="num"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="calcFact(num.value)" value="Factorial"></td>
+            </tr>
+
+        </table>
+    </form>
+
+    
+    <div id="factdiv"></div> 
+
+  
+</body>
+
+</html>

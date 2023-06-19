@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3x3 Images</title>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("img").mousedown(function(){
+                $(this).fadeOut("fast");
+            });
+
+            $("img").mouseup(function(){
+                $(this).fadeIn("slow");
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+
+    <table border="1" style="padding: 50px;">
+        
+        <tr>
+            <td><img src="1.jpeg"/></td>
+            <td><img src="2.jpeg"/></td>
+            <td><img src="3.jpeg"/></td>
+        </tr>
+        <tr>
+            <td><img src="4.jpeg"/></td>
+            <td><img src="5.jpeg"/></td>
+            <td><img src="6.jpeg"/></td>
+        </tr>
+        <tr>
+            <td><img src="7.jpeg"/></td>
+            <td><img src="8.jpeg"/></td>
+            <td><img src="9.jpeg"/></td>
+        </tr>
+            
+    </table>
+    
+</body>
+</html>

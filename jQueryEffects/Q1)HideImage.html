@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Image</title>
+    <script src="jquery-3.6.4.min.js" ></script>
+    <script>
+        $(document).ready(function(){
+        $("#hide").click(function(){
+            $("img").hide();
+        });
+        $("#show").click(function(){
+            $("img").show();
+        });
+        $("#toggle").click(function(){
+            $("img").toggle();
+        });
+    });
+    </script>
+</head>
+<body>
+    <img src="Sunset.jpg">
+    <br>
+    <button id="hide">Hide Image</button>
+    <button id="show">Show Image</button>
+    <button id="toggle">Toggle Image</button>
+
+</body>
+</html>
